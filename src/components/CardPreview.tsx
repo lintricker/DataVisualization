@@ -8,12 +8,11 @@ import { ICardPreview } from '../interfaces/ICardPreview';
 
 export default function CardPreview(card: ICardPreview) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 445, minWidth: 300, margin: "10px"}}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          height="140"          
           alt="green iguana"
         />
         <CardContent>

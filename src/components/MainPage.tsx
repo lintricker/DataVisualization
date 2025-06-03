@@ -1,5 +1,4 @@
-import { Box, alpha, Stack} from "@mui/material";
-import Header from "./Header";
+import { Box } from "@mui/material";
 import { ICardPreview } from "../interfaces/ICardPreview";
 import CardPreview from "./CardPreview";
 
@@ -28,7 +27,7 @@ const cards: Array<ICardPreview> = [
 
 function MainPage() {
   return (
-    <Box>
+    <Box sx={{ display: "flex", flexWrap:"wrap", flexGrow: 1, p: 1, justifyContent: 'flex-start' }}>
           {cards.map((item) => <CardPreview name={item.name} content={item.content} />)}
         </Box>
   );
