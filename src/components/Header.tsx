@@ -1,12 +1,11 @@
+import { Breadcrumbs, Link, Typography } from '@mui/material';
 import React from 'react';
 
 function Header() {
   return (
-    <div>
-      <p><a href=''>check</a></p> 
-      <p><a href=''>check</a></p> 
-      <p><a href=''>check</a></p> 
-    </div>
+    <Breadcrumbs aria-label="breadcrumb" sx={{margin: "10px", padding: "8px"}}>      
+      <Typography sx={{ color: 'text.primary' }}>Главная</Typography>
+  </Breadcrumbs>
   );
 }
 
